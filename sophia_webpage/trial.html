@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore - Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #EE583F; 
+        }
+        header {
+            background-color: #2E4057;
+            color: #FFF7EE;
+            display: flex;
+            align-items: center;
+            padding: 15px; 
+            font-size: 64px; 
+            font-weight: bold;
+        }
+        header img {
+            height: 100px; 
+            margin-right: 30px; 
+        }
+        nav {
+            background-color: #C8B65E;
+            color: #C8B65E;
+            padding: 20px; 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; 
+            font-size: 20px; 
+        }
+        .cart-button {
+            background-color: #2E4057;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .cart-button:hover {
+        background-color: #1B2838;
+        }
+        h1 {
+            font-size: 50px; 
+        }
+        p {
+            font-weight: bold; 
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .gallery-item {
+            background-color: #FFF7EE;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .gallery-item p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .gallery-item button {
+            background-color: #2E4057;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .gallery-item button:hover {
+            background-color: #1B2838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Book Haven Logo"> 
+        Book Haven Bookstore
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="recc.html">Book Recommendations</a>
+        </div>
+        <button class="cart-button">Shopping Cart</button>
+    </nav>
+    <div class="content">
+        <h1>Gallery</h1>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="img/Client3_Book1.png" alt="Book 1">
+                <p>Brie Mine 4Ever, a book for cheese lovers</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Book2.png" alt="Book 2">
+                <p>Glory Riders, a book about bikers</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Book3.png" alt="Book 3">
+                <p>Sorcerer’s Shadowed Chronicles, a fantasy book</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Magazine1.png" alt="magazine 1">
+                <p>Ball, a magazine about pickleball</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Magazine2.png" alt="magazine 2">
+                <p>Travel, a magazine for travelers</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Magazine3.png" alt="magazine 3">
+                <p>Eat., a magazine for foodies</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Notebook.png" alt="notebook">
+                <p>A set of four Book Haven Bookstore stickers that promote reading</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="gallery-item">
+                <img src="img/Client3_Stickers.png" alt="stickers">
+                <p>A notebook with text on the cover that says Book Haven Bookstore</p>
+                <button>Add to Cart</button>
+            </div>
+
+            <div class="gallery-item">
+                <img src="img/Client3_ToteBag.png" alt="totebag">
+                <p>A canvas tote bag with black lettering that says ALL I DO IS READ READ READ</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

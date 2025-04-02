@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C8B65E; 
+        }
+        header {
+            background-color: #2E4057;
+            color: #FFF7EE;
+            display: flex;
+            align-items: center;
+            padding: 15px; 
+            font-size: 64px; 
+            font-weight: bold;
+        }
+        header img {
+            height: 100px; 
+            margin-right: 30px; 
+        }
+        nav {
+            background-color: #EE583F;
+            color: #C8B65E;
+            padding: 20px; 
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; 
+            font-size: 20px; 
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+            text-align: center; 
+        }
+        h1 {
+            font-size: 48px; 
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 20px; 
+            line-height: 1.6;
+            font-weight: bold; 
+        }
+        .timings {
+            font-size: 20px; 
+            line-height: 1.8; 
+            margin-top: 10px;
+        }
+        .feedback-form {
+            margin-top: 30px;
+            text-align: left;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFF7EE;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .feedback-form label {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .feedback-form input,
+        .feedback-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .feedback-form button {
+            background-color: #2E4057;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .feedback-form button:hover {
+            background-color: #1B2838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Book Haven Logo"> 
+        Book Haven Bookstore
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="recc.html">Upcoming Events</a>
+        </div>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>About Us</h1>
+            <p>Book Haven Bookstore is a local treasure for book enthusiasts, offering a diverse selection of books, magazines, journals, and office supplies. With a deep-rooted commitment to fostering literary exploration and a love for reading, it is embarking on the creation of an online presence that mirrors its dedication to the world of words. Serving a broad audience of book lovers and knowledge seekers, its central goal is to amplify its visibility, cultivate a vibrant literary community, and simplify the process of book inquiries and purchases. Its target audience comprises avid readers, students, and individuals in search of high-quality reading materials and office essentials. Book Haven Bookstore’s website theme revolves around celebrating the written word, creating an inviting digital space that encourages literary discovery, and supporting intellectual growth.</p>
+        </section>
+        <section id="about">
+            <h1>Store Timings</h1>
+            <div class="timings">
+                <p>Monday–Friday: 9 a.m. to 8 p.m.</p>
+                <p>Saturday: 10 a.m. to 6 p.m.</p>
+                <p>Sunday: 11 a.m. to 5 p.m.</p>
+            </div>
+        </section>
+        <section id="feedback">
+            <h1>Leave Your Feedback</h1>
+            <form id="feedback-form" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <label for="comment">Comment:</label>
+                <textarea id="comment" name="comment" rows="5" placeholder="Enter your feedback" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+    <script>
+        // Handle form submission
+        document.getElementById('feedback-form').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from refreshing the page
+
+            // Get the values from the form fields
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const comment = document.getElementById('comment').value;
+
+            // Store the values in sessionStorage
+            sessionStorage.setItem('name', name);
+            sessionStorage.setItem('email', email);
+            sessionStorage.setItem('comment', comment);
+
+            // Display a confirmation message
+            alert('Thank you for your feedback! Your information has been saved.');
+
+            // Optionally, clear the form fields
+            document.getElementById('feedback-form').reset();
+        });
+
+        // Optional: Retrieve and log the stored data (for debugging purposes)
+        console.log('Name:', sessionStorage.getItem('name'));
+        console.log('Email:', sessionStorage.getItem('email'));
+        console.log('Comment:', sessionStorage.getItem('comment'));
+    </script>
+</body>
+</html>

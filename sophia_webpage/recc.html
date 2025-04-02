@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C8B65E; 
+        }
+        header {
+            background-color: #2E4057;
+            color: #FFF7EE;
+            display: flex;
+            align-items: center;
+            padding: 15px; 
+            font-size: 64px; 
+            font-weight: bold;
+        }
+        header img {
+            height: 100px; 
+            margin-right: 30px; 
+        }
+        nav {
+            background-color: #EE583F;
+            color: #C8B65E;
+            padding: 20px; 
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px; 
+            font-size: 20px;
+            font-weight: bold; 
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 20px;
+        }
+        .event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+            background-color: #FFF7EE;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .event img {
+            width: 40%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .event-info {
+            width: 60%;
+        }
+        .event-info h2 {
+            font-size: 28px;
+            color: #2E4057;
+            margin-bottom: 10px;
+        }
+        .event-info p {
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Book Haven Logo"> <!-- Add your logo file here -->
+        Book Haven Bookstore
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="recc.html">Upcoming Events</a>
+        </div>
+    </nav>
+    <div class="content">
+        <div class="event">
+            <img src="img/Client3_Book1.png" alt="Book Reading Event">
+            <div class="event-info">
+                <h2>Book Reading: "Brie Mine 4Ever"</h2>
+                <p><strong>Date:</strong> April 15, 2025</p>
+                <p><strong>Time:</strong> 3:00 PM - 5:00 PM</p>
+                <p>Join us for an enlighting reading about cheese.</p>
+            </div>
+        </div>
+
+        <div class="event">
+            <img src="img/R.jpeg" alt="Kids Summer Camp">
+            <div class="event-info">
+                <h2>Kids Summer Camp: "Adventures in Reading"</h2>
+                <p><strong>Date:</strong> June 10 - June 14, 2025</p>
+                <p><strong>Time:</strong> 9:00 AM - 1:00 PM</p>
+                <p>A fun-filled summer camp for kids aged 6-12! Activities include storytelling, creative writing, and reading.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

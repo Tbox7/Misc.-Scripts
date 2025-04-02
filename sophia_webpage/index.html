@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Haven Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #C8B65E; 
+            line-height: 1.8; 
+            color: #333; 
+        }
+        header {
+            background-color: #2E4057;
+            color: #FFF7EE;
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            font-size: 72px; 
+            font-weight: bold;
+        }
+        header img {
+            height: 120px; 
+            margin-right: 30px; 
+        }
+        nav {
+            background-color: #EE583F;
+            color: white;
+            padding: 20px; 
+            display: flex;
+            justify-content: space-between;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px; 
+            font-size: 24px; 
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            padding: 40px; 
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            text-align: center; 
+        }
+
+        section {
+            width: 80%; 
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 60px;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            text-align: center; 
+        }
+        h2 {
+            font-size: 50px; 
+            color: #2E4057;
+            margin-top: 0px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        p {
+            font-size: 40px;
+            color: #333;
+        }
+        blockquote {
+            font-style: italic;
+            color: #555;
+            margin: 15px 0;
+            padding-left: 25px; 
+            border-left: 5px solid #C8B65E; 
+            font-size: 30px; 
+        }
+        ul {
+            list-style-type: disc; 
+            padding: 0; 
+            margin: 0 auto; 
+            list-style-position: inside; 
+            font-size: 40px; 
+            text-align: left; 
+        }
+
+        li {
+            margin-bottom: 10px; 
+        }
+        .product-gallery {
+            display: flex;
+            gap: 30px;
+            justify-content: center; 
+            flex-wrap: wrap;
+        }
+        .product-item {
+            text-align: center;
+            width: 200px; 
+        }
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); 
+        }
+        .product-item p {
+            margin-top: 15px; 
+            font-weight: bold;
+            font-size: 20px; 
+        }
+        .categories {
+            display: flex;
+            gap: 30px;
+            justify-content: center; 
+        }
+        .categories a {
+            background-color: #2E4057;
+            color: white;
+            padding: 15px 25px; 
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 20px; 
+        }
+        .categories a:hover {
+            background-color: #1B2838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Book Haven Logo"> 
+        Book Haven Bookstore
+    </header>
+    <nav>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="recc.html">Upcoming Events</a>
+        </div>
+    </nav>
+    <div class="content">
+        <section id="home">
+            <h1>Welcome to Our Homepage</h1>
+        </section>
+        <section id="client-highlights">
+            <h2>Client Highlights</h2>
+            <p>See what our happy customers have to say:</p>
+            <blockquote>"Book Haven is my go-to bookstore! The selection is amazing, and the service is top-notch." - Jane Doe</blockquote>
+            <blockquote>"I love the personalized recommendations. They always find the perfect book for me!" - John Smith</blockquote>
+        </section>
+
+        <section id="shopping-promos">
+            <h2>Shopping Promos</h2>
+            <p>Don't miss out on our latest deals:</p>
+            <ul>
+                <li>Buy 2 Get 1 Free on all fiction books!</li>
+                <li>20% off all children's books this weekend only!</li>
+                <li>Free shipping on orders over $50!</li>
+            </ul>
+        </section>
+
+        <section id="product-images">
+            <h2>Featured Products</h2>
+            <div class="product-gallery">
+                <div class="product-item">
+                    <img src="img/Client3_Book1.png" alt="Book 1">
+                    <p>Brie Mine 4Ever</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/Client3_Magazine2.png" alt="Magazine 2">
+                    <p>Travel Magazine</p>
+                </div>
+                <div class="product-item">
+                    <img src="img/Client3_ToteBag.png" alt="Tote Bag">
+                    <p>Canvas Tote Bag</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="shopping-perks">
+            <h2>Why Shop With Us?</h2>
+            <ul>
+                <li>Wide selection of books and merchandise</li>
+                <li>Exclusive discounts for members</li>
+                <li>Fast and reliable shipping</li>
+                <li>Personalized book recommendations</li>
+            </ul>
+        </section>
+
+        <section id="product-categories">
+            <h2>Shop by Category</h2>
+            <div class="categories">
+                <a href="gallery.html">Fiction</a>
+                <a href="gallery.html">Non-Fiction</a>
+                <a href="gallery.html">Children's Books</a>
+                <a href="gallery.html">Merchandise</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
